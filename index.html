@@ -10,11 +10,19 @@
     img { max-width: 240px; height: auto; display: block; margin: 0.5rem 0 1rem; }
     small { font-size: 0.8rem; color: #555; }
     ul, ol { margin-left: 1.2rem; }
-    /* Only Qualifications and Accomplishments headings in royal blue */
+
+    /* Navy blue for the description heading */
+    h2.description-heading {
+      color: navy;
+      font-style: normal;
+    }
+
+    /* Royal blue only for Qualifications and Accomplishments headings */
     h2.qualifications, h2.accomplishments {
       color: royalblue;
       font-style: normal;
     }
+
     /* Increase font size for the descriptive paragraph */
     p.description {
       font-size: 18px; /* default ~16px, increased by 2 points */
@@ -28,8 +36,8 @@
   <!-- ii. Image immediately below the H1 -->
   <img src="https://via.placeholder.com/240x160.png?text=Katharine+Destro" alt="Profile image of Katharine Destro" />
 
-  <!-- iii. Heading 2 element -->
-  <h2>A brief description of who I am</h2>
+  <!-- iii. Heading 2 element in navy blue -->
+  <h2 class="description-heading">A brief description of who I am</h2>
 
   <!-- iv. Paragraph with increased font size -->
   <p class="description">
@@ -39,19 +47,19 @@
     but I also make time for the things I <strong>love</strong> — especially my cat and my garden.
   </p>
 
-  <!-- v. Second Heading 2 element -->
+  <!-- v. Qualifications heading -->
   <h2 class="qualifications">Qualifications</h2>
 
   <!-- vi. Unordered list of qualifications -->
   <ul>
     <li><h3>Experienced in <strong><em>Information Management support</em></strong> and <strong><em>enterprise systems troubleshooting</em></strong></h3></li>
-    <li><h3>Solid working knowledge of <em>application portfolio</em> management and lifecycle practices</h3></li>
+    <li><h3>Solid working knowledge of <strong><em>application portfolio management</em></strong> and lifecycle practices</h3></li>
     <li><h3>Lead developer and advocate for <strong><em>data literacy initiatives</em></strong> across teams</h3></li>
     <li><h3>Strong background in <strong><em>workflow design</em></strong> and <strong><em>process improvement</em></strong></h3></li>
     <li><h3>Collaborative team player with a focus on <em>knowledge sharing</em> and mentoring</h3></li>
   </ul>
 
-  <!-- vii. Accomplishments heading styled same as Qualifications -->
+  <!-- vii. Accomplishments heading -->
   <h2 class="accomplishments">Accomplishments</h2>
 
   <!-- viii. Ordered list of accomplishments -->
